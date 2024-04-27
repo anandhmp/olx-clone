@@ -53,7 +53,7 @@ const Header = () => {
             
           </Link>
         </div>
-        {user && <span onClick={()=>{
+        {user && <span className='logout-menu' onClick={()=>{
           firebase.auth().signOut();
           navigate("/login");
         }}>Logout</span>}
@@ -61,7 +61,7 @@ const Header = () => {
           <SellButton></SellButton>
           <div className="sellMenuContent">
             <SellButtonPlus></SellButtonPlus>
-            <span>SELL</span>
+            <Link to={'/create'} className='sell-text'>SELL</Link>
           </div>
         </div>
       </div>

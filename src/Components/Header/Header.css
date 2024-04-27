@@ -164,4 +164,11 @@
       display: none;
     }
   }
-  
+  .sell-text{
+    text-decoration: none;
+    color: #002f34;
+    padding-left: 1px;
+  }
+  .logout-menu{
+    cursor: pointer;
+  }
